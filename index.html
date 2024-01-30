@@ -1,0 +1,227 @@
+<!DOCTYPE html>                                                                                                         <!-- declare document as HTML5 -->
+<html lang="en">                                                                                                        <!-- root element of an HTML page and set language to english -->
+<head>                                                                                                                  <!-- contains meta information about the HTML page -->
+    <meta charset="UTF-8">                                                                                              <!-- specifies character set to UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">                                                               <!-- specifies that IE uses the latest available rendering engine -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">                                              <!-- specifies view port settings (User's visble area) -->
+    <title>Portfolio</title>                                                                                            <!-- specifies a title for the HTML page -->
+    <link rel="stylesheet" href="style.css">                                                                            <!-- specifies the relation between the connected html and css file -->
+    <script src="https://kit.fontawesome.com/22c7427c8a.js" crossorigin="anonymous"></script>
+</head>
+<body>                                                                                                                  <!-- defines the document's body and contains all visble elements -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">                                                                    <!-- adds logo image -->
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>                                                                           <!-- Top Menu -->
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Computer Engineering Enthusiast</p>
+            <h1>Hi, I'm <span>Wilson</span><br>Yang from Texas</h1>
+        </div>
+    </div>
+</div>
+ <!-- about -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Over 3 years of expertise in embedded systems design and development, coupled with a Computer 
+                Engineering degree: this is my foundation. My proficiency--honed through experience--extends to C++,
+                Python; Java and MATLAB are also among the tools I master. With this knowledge base at hand, crafting
+                innovative solutions for complex embedded systems becomes not only possible but an exciting challenge
+                that I embrace passionately.</p>
+                <br>
+                <p>My technical expertise, fortified by robust communication and collaboration skills - define me as 
+                an unwavering team player. Thriving in collaborative environments--where working closely with others
+                towards mutual goals is not only rewarding but exhilarating for me--I consistently demonstrate an 
+                active role in achieving our shared objectives.</p>
+                <br> 
+                <p>Feel free to browse through my portfolio for an understand of my capabilities and the projects I've
+                worked with. Eagerly, I anticipate our connection; let's discuss how your project requirements can align
+                with my skill set.</p>
+                <br>   
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">                                                                              <!-- Skills -->
+                    <ul>
+                        <li><span>Developmental Tools</span><br>Matlab, TinkerCAD, Energia, Solidworks, Git, Keil,
+                        J-Link, html, CCS, Visual Studios Code, IAR</li>
+                        <li><span>Embedded Hardware Platforms</span><br>Microcontrollers (e.g., ARM Cortex-M series),
+                        Arduino, Raspberry Pi, ESP32</li>
+                        <li><span>Communication Protocols</span><br>SPI, UART, I2C, Bluetooth, Wifi, USB</li>
+                        <li><span>Operating Systems</span><br>RTOS, Linux</li>
+                        <li><span>Software Development</span><br>Firmware Development, Linux Kernel Development</li>
+                        <li><span>Security and Safety</span><br>Security Protocols, Safety-Critical Systems</li>
+                        <li><span>Device Drivers and Optimizations</span><br>Device Drivers, RTOS Kernel Tuning, Power
+                        Management, Debugging</li>
+                        <li><span>Testing and Integration</span><br>Automated Testing, Continuous 
+                        Integration/Continuous Deployment (CI/CD)</li>
+                        <li><span>Design Patterns and Signal Processing</span><br>Software Design Patterns Signal 
+                        Processing</li>
+                        <li><span>Agile/ Scrum</span><br>Experienced with Agile/Scrum methodologies</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">                                                                              <!-- Experience -->
+                    <ul>
+                        <li><span>2022-2023</span><br>Autonomous Drone and Autonomous Ground Vehicle Senior 
+                        Project</li>
+                        <li><span><strong>Brief Description: </strong></span>Designed and developed embedded software 
+                        components for an autonomous drone and autonomous ground vehicle as part of a senior project.</li>
+                        <li><span><strong>Technical Skills Applied: </strong></span>Embedded Systems Design, Microcontroller 
+                        Programming, Real-Time Systems, Sensor Fusion, Control Systems</li>
+                        <li><span><strong>Key Achievements/Contributions: </strong></span><br>
+                        Developed firmware for the microcontroller unit (MCU) to control the drone and ground vehicle motors, 
+                        sensors, and actuators.</li>
+                        <li>Implemented communication protocols for data exchange between the MCU and the autopilot system.</li>
+                        <li>Developed control algorithms to enable autonomous navigation and obstacle avoidance.</li>
+                        <li>3D printed custom parts for the drone and ground vehicle.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">                                                                              <!-- Education -->
+                    <ul>
+                        <li><span>2023</span><br>BS from UTD Texas</li>
+                        <li><span>Relevant Coursework</span><br>Embedded Systems Design, Microcontroller Programming,
+                        Real-Time Systems,
+                        Operating Systems, Software Engineering, Data Structures and Algorithms, C Programming,
+                        C++ Programming, Assembly Language Programming, Digital Logic Design, Analog Electronics,
+                        Microelectronics, Embedded Systems Hardware, Control Systems, Communication Systems,
+                        Signal Processing</li>
+                        <li><span>2023</span><br>BS from UTD Texas</li>
+                        <li><span>2023</span><br>BS from UTD Texas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>poop</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>poop</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>poop</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>wilsonyangr@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>469-732-0727</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/wilson-yang00/details/skills/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/wilsoncool00"><i class="fab fa-github"></i></a>
+                </div>
+                <a href="images/Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Wilson <i class="fas fa-heart"></i></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbw4_TX1N9rNI4Ij113ixYa7h5B8nguU6_i8D0pXpu3AfNF2pOJRgrEFtgs0y5R2_74TiA/exec>'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
